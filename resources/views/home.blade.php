@@ -8,14 +8,14 @@
 <body>
     <div style="border:2px solid #000">
         <h2>Login</h2>
-        <form action="/register" method="POST">
+        <form action="/login" method="POST">
             @csrf
-            <input type="text" name="name" id="name" placeholder="name"><br>
-            <input type="password" name="password" id="password" placeholder="password"><br>
+            <input type="text" name="nameSent" id="name" placeholder="name"><br>
+            <input type="password" name="passwordSent" id="password" placeholder="password"><br>
             <button>Login</button>
         </form>
         <br>
-        <p>Not a member yet? Please sign up here</p>
+        <p>Not a member yet? <a href="/register">Please sign up here</a></p>
     </div>
 </body>
 </html>

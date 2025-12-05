@@ -18,4 +18,12 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/page1', function () {
+    return view('page1');
+});
 Route::post("/register", [UserController::class, "register"]);
+Route::post("/login", [UserController::class, "login"]);
+Route::post("/logout", [UserController::class, "logout"]);
